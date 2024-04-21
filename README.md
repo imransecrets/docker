@@ -61,6 +61,8 @@ Server: Docker Desktop 4.28.0 (139021)
   GitCommit:        de40ad0
   
 * right hand side tray `right click on docker`
+* ![image](https://github.com/imransecrets/docker/assets/8496861/8428c08c-65cf-4008-813a-ed6cf4bafc8e)
+
 * select `switch to Window container `
 * you will found an error propmt with below wordings:
   
