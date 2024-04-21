@@ -77,7 +77,50 @@ Run the following command to enable the Containers feature:
 
 `Enable-WindowsOptionalFeature -Online -FeatureName $("Microsoft-Hyper-V", "Containers") -All`
 
-After running the command, it will prompt you to restart your computer to apply the changes. Type 'Y' to confirm and press Enter.
-Once your computer restarts, you should be able to use Docker Desktop with the Containers feature enabled.
-Please make sure to run this command in an administrative PowerShell session to ensure it has the necessary permissions to make changes to Windows features.
+After running the command, it will prompt you to restart your computer to apply the changes. 
+Type 'Y' to confirm and press Enter.
+Once your computer restarts, 
+you should be able to use Docker Desktop with the Containers feature enabled.
+* Please make sure to run this command in an administrative PowerShell session to ensure it has the necessary permissions to make changes to Windows features.
+
+* Now again 
+
+C:\Users\Asif sb>docker version
+
+Client:
+
+ Cloud integration: v1.0.35+desktop.11
+ 
+ Version:           25.0.3
+ 
+ API version:       1.44
+ 
+ Go version:        go1.21.6
+ 
+ Git commit:        4debf41
+ 
+ Built:             Tue Feb  6 21:13:02 2024
+ 
+ OS/Arch:           windows/amd64
+ 
+ Context:           default
+
+Server: Docker Desktop 4.28.0 (139021)
+
+ Engine:
+ 
+  Version:          25.0.3
+  
+  API version:      1.44 (minimum version 1.24)
+  
+  Go version:       go1.21.6
+  
+  Git commit:       f417435
+  
+  Built:            Tue Feb  6 20:55:49 2024
+  
+  OS/Arch:          windows/amd64
+  
+  Experimental:     false
+
   
