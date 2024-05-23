@@ -123,4 +123,171 @@ Server: Docker Desktop 4.28.0 (139021)
   
   Experimental:     false
 
+# Docker Commands 
+
+Here's the content formatted as a `README.md` file with all the commands and short comments:
+
+```markdown
+# Docker Commands Cheat Sheet
+
+## Chapter 6: Images
+
+### List images
+```sh
+docker images
+```
+Lists all images on the Docker host.
+
+### Pull an image
+```sh
+docker pull <image_name>
+```
+Downloads an image from a Docker registry.
+
+### Remove an image
+```sh
+docker rmi <image_id>
+```
+Deletes an image by its ID.
+
+### Remove multiple images
+```sh
+docker rmi <image_id1> <image_id2>
+```
+Deletes multiple images by their IDs.
+
+### Remove all images
+```sh
+docker rmi $(docker images -q) -f
+```
+Deletes all images on the system. Note: This only works in a PowerShell terminal on Windows.
+
+## Chapter 7: Containers
+
+### List running containers
+```sh
+docker ps
+```
+Lists all running containers.
+
+### List all containers
+```sh
+docker ps -a
+```
+Lists all containers, including stopped ones.
+
+### Start a container
+```sh
+docker start <container_id>
+```
+Starts a stopped container by its ID.
+
+### Stop a container
+```sh
+docker stop <container_id>
+```
+Stops a running container by its ID.
+
+### Remove a container
+```sh
+docker rm <container_id>
+```
+Deletes a stopped container by its ID.
+
+### Remove all containers
+```sh
+docker rm $(docker ps -a -q)
+```
+Deletes all containers on the system.
+
+## Chapter 8: Containerizing an App
+
+### Build an image from a Dockerfile
+```sh
+docker build -t <image_name> .
+```
+Builds an image from a Dockerfile in the current directory.
+
+### Run a container
+```sh
+docker run -d -p <host_port>:<container_port> <image_name>
+```
+Runs a container in detached mode and maps a host port to a container port.
+
+## Chapter 9: Multi-container Apps with Compose
+
+### Start services defined in a docker-compose.yml
+```sh
+docker-compose up
+```
+Starts services defined in a `docker-compose.yml` file.
+
+### Stop services defined in a docker-compose.yml
+```sh
+docker-compose down
+```
+Stops and removes services defined in a `docker-compose.yml` file.
+
+## Chapter 10: Docker Swarm
+
+### Initialize a Swarm
+```sh
+docker swarm init
+```
+Initializes a new Swarm.
+
+### Join a Swarm
+```sh
+docker swarm join --token <token> <manager_ip>:<port>
+```
+Adds a node to an existing Swarm using a token and manager IP.
+
+### Deploy a stack
+```sh
+docker stack deploy -c <compose_file> <stack_name>
+```
+Deploys a new stack using a Compose file.
+
+## Chapter 11: Docker Networking
+
+### List networks
+```sh
+docker network ls
+```
+Lists all networks on the Docker host.
+
+### Create a network
+```sh
+docker network create <network_name>
+```
+Creates a new network.
+
+### Remove a network
+```sh
+docker network rm <network_name>
+```
+Deletes a network by its name.
+
+## Chapter 13: Volumes and Persistent Data
+
+### List volumes
+```sh
+docker volume ls
+```
+Lists all volumes on the Docker host.
+
+### Create a volume
+```sh
+docker volume create <volume_name>
+```
+Creates a new volume.
+
+### Remove a volume
+```sh
+docker volume rm <volume_name>
+```
+Deletes a volume by its name.
+```
+
+This `README.md` file provides a clear and concise reference to the Docker commands covered in the book "Docker Deep Dive" along with short comments explaining each command.
   
