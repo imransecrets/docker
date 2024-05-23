@@ -125,14 +125,13 @@ Server: Docker Desktop 4.28.0 (139021)
 
 # Docker Commands 
 
-Here's the content formatted as a `README.md` file with all the commands and short comments:
 
-```markdown
 # Docker Commands Cheat Sheet
 
 ## Chapter 6: Images
 
 ### List images
+
 ```sh
 docker images
 ```
